@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/iconfont.css" />
+   
+    <style type="text/css">
+    	body{
+    		background-color: #F7F7F8;
+    	}
+    	#slider img{
+    		width: 100%;
+    		height: 300px;
+    	}
+    	.mui-table-view .mui-icon{
+    		color: #8AC763;
+    		font-size: 26px!important;
+    	}
+   		#goods-list{
+   			
+   		}
+   		#sorts{
+   			padding-left: 10px;
+   			padding-right: 10px;
+   			width: 100%;
+   			height: 400px;
+   			text-align: center;	
+   		}
+   		#sorts .list{
+   			margin-top: 5px;
+   			background-color: #fff;
+   		}
+   		#sorts img{
+   			display: block;
+   		}
+   		#sorts .title{
+   			height: 40px;
+   			line-height: 40px;
+   			text-align: center;
+   			font-size: 12px;
+   			color: #999;
+   		}
+   		#sorts .img1{
+   			width: 100%;
+   			height: 300px;	
+   		}
+   		#sorts .detail{
+   			width: 100%;
+   			white-space: nowrap;
+   			overflow: hidden;
+   			text-overflow: ellipsis;
+   			height: 40px;
+   			line-height: 40px;
+			color: #333;
+			text-align: left;
+			font-size: 14px;
+			
+   		}
+   		#sorts .btm{
+   			height: 20px;
+   			float: left;
+   			font-size: 12px;
+   			line-height: 20px;
+   			color: #666;
+   		}
+   		#sorts .btm .left{
+   			text-align: left;
+   			float: left;
+   			display: inline-block;
+   		}
+   		#sorts .btm .left .tou{
+   			width: 20px;
+   			height: 20px;
+   			overflow: hidden;
+   			border-radius: 50%;
+   			margin-right: 5px;	
+   		}
+   		#sorts .btm .img2{
+   			width: 20px;
+   			height: 20px;
+   			
+   			float: left;
+   		}
+   		#sorts .btm .right{
+   			float: right;
+   			display: inline-block;
+   			
+   		}
+    </style>
+</head>
+<body>
+	<!--头部开始-->
+	<header class="mui-bar mui-bar-nav" style="height: 50px;background-color: #fff;">
+	    <div class="mui-input-row mui-search" >
+    		<input type="search" class="mui-input-clear" placeholder="大家都在搜：卧室+窗帘" style="height: 45px;background-color: #fff;">
+		</div>
+	</header>
+	<!--头部结束-->
+	<!--主体开始-->
+	<div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+		<div class="mui-content">
+			<!--主体轮播开始-->
+		    <div id="slider" class="mui-slider" >
+		      <div class="mui-slider-group mui-slider-loop">
+		        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+		        <div class="mui-slider-item mui-slider-item-duplicate">
+		          <a href="#">
+		            <img src="img/img004.jpg">
+		          </a>
+		        </div>
+		        <!-- 第一张 -->
+		        <div class="mui-slider-item">
+		          <a href="#">
+		            <img src="img/img001.jpg">
+		          </a>
+		        </div>
+		        <!-- 第二张 -->
+		        <div class="mui-slider-item">
+		          <a href="#">
+		            <img src="img/img002.jpg">
+		          </a>
+		        </div>
+		        <!-- 第三张 -->
+		        <div class="mui-slider-item">
+		          <a href="#">
+		            <img src="img/img003.jpg">
+		          </a>
+		        </div>
+		        <!-- 第四张 -->
+		        <div class="mui-slider-item">
+		          <a href="#">
+		            <img src="img/img004.jpg">
+		          </a>
+		        </div>
+		        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+		        <div class="mui-slider-item mui-slider-item-duplicate">
+		          <a href="#">
+		            <img src="img/img001.jpg">
+		          </a>
+		        </div>
+		      </div>
+		      <div class="mui-slider-indicator">
+		        <div class="mui-indicator mui-active"></div>
+		        <div class="mui-indicator"></div>
+		        <div class="mui-indicator"></div>
+		        <div class="mui-indicator"></div>
+		      </div>
+		    </div>
+		    <!--主体轮播结束-->
+		    <!--主体九宫格开始-->
+		    <ul class="mui-table-view mui-grid-view mui-grid-9">
+		    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-kantu"></span>
+		            <div class="mui-media-body">整屋案例</div>
+		        </a>
+		    </li>
+		    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-zhinan"></span>
+		            <div class="mui-media-body">居住指南</div>
+		        </a>
+		    </li>
+		    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-faxian"></span>
+		            <div class="mui-media-body">话题</div>
+		        </a>
+		    </li>
+		    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-faxian"></span>
+		            <div class="mui-media-body">大家的家</div>
+		        </a>
+		    </li>
+		    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-caidanzhaolinggan"></span>
+		            <div class="mui-media-body">今日推荐</div>
+		        </a>
+		    </li>
+		    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+		        <a href="#">
+		            <span class="mui-icon iconfont icon-wodehuati"></span>
+		            <div class="mui-media-body">找设计师</div>
+		        </a>
+		    </li>
+		    </ul>		    
+		    <!--主体九宫格结束-->
+		 	<div id="goods-list">
+		 		<div id="sorts"></div>
+		 	</div>
+		     
+	</div>
+	</div>
+	<!--主体结束-->
+	<nav class="mui-bar mui-bar-tab">
+	    <a class="mui-tab-item mui-active" id="a">
+	        <span class="mui-icon iconfont icon-dongtai "></span>
+	        <span class="mui-tab-label">动态</span>
+	    </a>
+	    <a class="mui-tab-item" id="b">
+	        <span class="mui-icon iconfont icon-faxian"></span>
+	        <span class="mui-tab-label">发现</span>
+	    </a>
+	    <a class="mui-tab-item" id="c">
+	        <span class="mui-icon iconfont icon-jiahao jiahao"></span>
+	        <span class="mui-tab-label"></span>
+	    </a>
+	    <a class="mui-tab-item" id="d">
+	        <span class="mui-icon iconfont icon-kantu"></span>
+	        <span class="mui-tab-label">看图</span>
+	    </a>
+	    <a class="mui-tab-item" id="e">
+	        <span class="mui-icon iconfont icon-wo"></span>
+	        <span class="mui-tab-label">我的</span>
+	    </a>
+	</nav>
+</body>
+<script type="text/javascript" src="js/touch.min.js"></script>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+ <script type="text/javascript" charset="utf-8">  	
+  	//实现上下拉刷新开始
+
+	mui.init({
+     	pullRefresh : {
+		    container:"#refreshContainer",//下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+		    down : {
+		      height:50,//可选,默认50.触发下拉刷新拖动距离,
+		//    auto: true,//可选,默认false.自动下拉刷新一次
+		      contentdown : "下拉可以刷新",//可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
+		      contentover : "释放立即刷新",//可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
+		      contentrefresh : "正在刷新...",//可选，正在刷新状态时，下拉刷新控件上显示的标题内容
+		      callback :function(){
+		      	
+		      } //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+		    },
+  
+		  up : {
+		      height:50,//可选.默认50.触发上拉加载拖动距离
+		//    auto:true,//可选,默认false.自动上拉加载一次
+		      contentrefresh : "正在加载...",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+		      contentnomore:'没有更多数据了',//可选，请求完毕若没有更多数据时显示的提醒内容；
+		      callback :function(){
+		      } //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+		    }
+		  }
+     	
+     });
+
+	
+//实现上下拉刷新结束
+//轮播开始
+
+	var gallery = mui('.mui-slider');
+	gallery.slider({
+	  interval:700//自动轮播周期，若为0则不自动播放，默认为0；
+	});
+//轮播结束
+
+//加载数据
+
+	function datas(){
+		$.getJSON("./goods-list/fx.json",function(data){
+			console.log(data.faxian.id)
+			var str='';
+			$.each(data.faxian, function(i) {
+				
+				console.log(data['faxian'][i]['id'])
+				str+='<div class="list"><p class="title">'+data['faxian'][i]['title']+'</p><img src="'+data['faxian'][i]['img']+'" alt=""  class="img1"/><p class="detail">'+data['faxian'][i]['detail']+'</p><p class="btm"><b class="left"><span class="tou"><img src="'+data['faxian'][i]['tou']+'" alt="" class="img2"/></span><span class="uname">'+data['faxian'][i]['uname']+'</span></b><i class="right"><span class="num">'+data['faxian'][i]['num']+'</span><span class="space">'+data['faxian'][i]['space']+'</span></i></p></p>'				
+		 			
+				
+			});
+			$("#sorts").html(str);
+		})
+	}
+	datas();
+    </script>
+</html>

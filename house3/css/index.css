@@ -1,0 +1,11 @@
+.mui-col-sm-3{ width: 75px; }
+ul {font-size: 14px;color: #8f8f94;}
+.mui-btn {padding: 10px;}
+.jiahao{ font-size: 30px!important; }
+#box{ width: 100%; padding: 20px; padding-bottom:20px;  background: #fff; height: auto; border-bottom: 1px solid #ccc; margin-bottom: 30px;}
+#tou{ height: 40px; width: 40px; border-radius: 50%; }
+#name{  margin-top: -44px;  display: flex;  margin-left: 48px; color: #000;}
+#time{ margin-left: 48px;  color: #C7C7CC;}
+#jieshao{ color: #008080;}
+#detail{color:#000  }
+.jiathis_style{ width: 100%; }

@@ -1,0 +1,67 @@
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"fonts/iconfont.ttf",
+			"js/zepto.js",
+			"goods-list/goodslist.json",
+			"goods-list/fx.json",
+			"goods-list/delimg/img008.jpg",
+			"goods-list/delimg/img001.jpg",
+			"goods-list/delimg/img006.jpg",
+			"goods-list/delimg/img005.jpg",
+			"goods-list/delimg/img003.jpg",
+			"goods-list/delimg/img009.jpg",
+			"goods-list/delimg/img007.jpg",
+			"goods-list/delimg/img010.jpg",
+			"goods-list/delimg/img004.jpg",
+			"goods-list/delimg/img002.jpg",
+			"goods-list/goodimg/img003.jpg",
+			"goods-list/goodimg/img004.jpg",
+			"goods-list/goodimg/img002.jpg",
+			"goods-list/goodimg/img007.jpg",
+			"goods-list/goodimg/img008.jpg",
+			"goods-list/goodimg/img001.jpg",
+			"goods-list/goodimg/img005.jpg",
+			"goods-list/goodimg/img009.jpg",
+			"goods-list/goodimg/img006.jpg",
+			"goods-list/goodimg/img010.jpg"
+		],
+		"refer": []
+	},
+	"main.html": {
+		"resources": [
+			"index.html",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"fonts/iconfont.ttf",
+			"js/zepto.js",
+			"js/main.js",
+			"my.html",
+			"fonts/mui.ttf"
+		],
+		"refer": [
+			"index.html",
+			"my.html"
+		]
+	},
+	"my.html": {
+		"resources": [
+			"js/main.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"fonts/iconfont.ttf",
+			"js/zepto.js",
+			"main.html"
+		],
+		"refer": [
+			"main.html"
+		]
+	}
+}

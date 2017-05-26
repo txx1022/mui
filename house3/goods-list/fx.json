@@ -1,0 +1,106 @@
+{
+"faxian":{
+		"001":{
+			"id":"001",
+			"title":"- 整屋案例 -",
+			"img":"goods-list/fximg/img001.jpg",
+			"detail":"保持台面干净，他们靠的是不占地收纳法",
+			"uname":"irence",
+			"tou":"goods-list/goodimg/img001.jpg",
+			"num":"三室",
+			"space":"94平米"
+			},
+		"002":{
+			"id":"002",
+			"title":"- 整屋案例 -",
+			"img":"goods-list/fximg/img002.jpg",
+			"detail":"采纳收光两不误",
+			"uname":"李兴鹏",
+			"tou":"goods-list/goodimg/img002.jpg",		
+			"num":"三室",
+			"space":"89平米"
+		},
+		"003":{
+			"id":"003",
+			"title":"- 整屋案例 -",
+			"img":"goods-list/fximg/img003.jpg",
+			"detail":"还原阳台初心[初心],她用纱帘植物制造出休憩天地",
+			"uname":"赖舒婷",
+			"tou":"goods-list/goodimg/img003.jpg",
+			"num":"二室",
+			"space":"70平米"
+		},
+		"004":{
+			"id":"004",
+			"title":"- 整屋案例 -",
+			"img":"goods-list/fximg/img004.jpg",
+			"detail":"想让客厅光线更柔和，试试灯带+木板吊顶",
+			"uname":"一澜空间设计",
+			"tou":"goods-list/goodimg/img004.jpg",
+			"num":"三室",
+			"space":"81平米"
+		},
+		"005":{
+			"id":"005",
+			"title":"- 整屋案例 -",
+			"img":"goods-list/fximg/img005.jpg",
+			"detail":"#客厅",
+			"uname":"周氏红烧you",
+			"tou":"goods-list/goodimg/img005.jpg",
+			"num":"-室",
+			"space":"90平米"
+		},
+		"006":{
+			"id":"006",
+			"title":"- 整屋案例 -",
+			"img":"goods-list/fximg/img006.jpg",
+			"detail":"#客厅#沙发#茶几#抱枕",
+			"uname":"意晖家",
+			"tou":"goods-list/goodimg/img006.jpg",
+			"num":"二室",
+			"space":"70平米"
+		},
+		"007":{
+			"id":"007",
+			"title":"- 整屋案例 -",
+			"img":"goods-list/fximg/img007.jpg",
+			"detail":"有腔调的高级灰餐厅，让你1秒爱上在家做饭",
+			"uname":"诺之践行",
+			"tou":"goods-list/goodimg/img007.jpg",
+			"num":"一室",
+			"space":"66平米"
+		},
+		"008":{
+			"id":"008",
+			"title":"- 整屋案例 -",
+			"img":"goods-list/fximg/img008.jpg",
+			"detail":"他用三招延伸空间感，让家看起来大一倍",
+			"uname":"Cengcengceng",
+			"tou":"goods-list/goodimg/img008.jpg",
+			"num":"四室",
+			"space":"205平米"
+		},
+		"009":{
+			"id":"009",
+			"title":"- 整屋案例 -",
+			"img":"goods-list/fximg/img009.jpg",
+			"detail":"不拆不砸，让空间更多",
+			"uname":"孜然君",
+			"tou":"goods-list/goodimg/img009.jpg",
+			"num":"五室",
+			"space":"285平米"
+		},
+		"010":{
+			"id":"010",
+			"title":"- 整屋案例 -",
+			"img":"goods-list/fximg/img009.jpg",
+			"detail":"飘窗改成卡座式餐区，采光收纳两不误",
+			"uname":"阿家空间设计",
+			"tou":"goods-list/goodimg/img009.jpg",
+			"num":"三室",
+			"space":"75平米"
+		}
+				
+	}
+
+}

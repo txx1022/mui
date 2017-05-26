@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title>index</title>
+<link href="css/mui.min.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<body>
+<div class="mui-off-canvas-wrap mui-draggable">
+<!-- 主页面容器 -->
+<div class="mui-inner-wrap">
+    <!-- 菜单容器 -->
+    
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                
+                  
+            </div>
+        </div>
+     
+    <!-- 主页面标题 -->
+    <header class="mui-bar mui-bar-nav">
+    	<header class="mui-bar mui-bar-nav" style="padding-right: 15px;">
+			<h1 class="mui-title">看图</h1>
+		</header>
+    </header>
+    
+      
+    <!-- 主页面内容容器 -->
+    
+<div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+<div class="mui-scroll">
+  <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+    <div class="mui-scroll">
+        <a class="mui-control-item mui-active">
+            推荐
+        </a>
+        <a class="mui-control-item">
+            客厅
+        </a>
+        <a class="mui-control-item">
+            卧室
+        </a>
+        <a class="mui-control-item">
+            卫生间
+        </a>
+        <a class="mui-control-item">
+            厨房
+        </a>
+        <a class="mui-control-item">
+            餐厅
+        </a>
+         <a class="mui-control-item">
+           玄关
+        </a>
+         <a class="mui-control-item">
+           阳台
+        </a>
+         <a class="mui-control-item">
+            收纳
+        </a>
+         <a class="mui-control-item">
+            装修记录
+        </a>
+         <a class="mui-control-item">
+           小户型
+        </a>
+         <a class="mui-control-item">
+           家务
+        </a>
+    </div>
+</div>
+<div id="content"></div> 
+</div>
+</div>
+</div>
+
+</div>
+</div> 	
+<nav class="mui-bar mui-bar-tab">
+	    <a class="mui-tab-item mui-active" id="a">
+	        <span class="mui-icon iconfont icon-dongtai "></span>
+	        <span class="mui-tab-label">动态</span>
+	    </a>
+	    <a class="mui-tab-item" id="b">
+	        <span class="mui-icon iconfont icon-faxian"></span>
+	        <span class="mui-tab-label">发现</span>
+	    </a>
+	    <a class="mui-tab-item" id="c">
+	        <span class="mui-icon iconfont icon-jiahao jiahao"></span>
+	        <span class="mui-tab-label"></span>
+	    </a>
+	    <a class="mui-tab-item" id="d">
+	        <span class="mui-icon iconfont icon-kantu"></span>
+	        <span class="mui-tab-label">看图</span>
+	    </a>
+	    <a class="mui-tab-item" id="e">
+	        <span class="mui-icon iconfont icon-wo"></span>
+	        <span class="mui-tab-label">我的</span>
+	    </a>
+	</nav>	
+</body>
+<script src="js/mui.min.js"></script>
+<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+  	 mui.init({
+    pullRefresh : {
+    container:"#refreshContainer",//下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+    down : {
+      height:50,//可选,默认50.触发下拉刷新拖动距离,
+//    auto: true,//可选,默认false.自动下拉刷新一次
+      contentdown : "下拉可以刷新",//可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
+      contentover : "释放立即刷新",//可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
+      contentrefresh : "正在刷新...",//可选，正在刷新状态时，下拉刷新控件上显示的标题内容
+      callback :function(){
+      	   aj()
+        mui('#refreshContainer').pullRefresh().endPulldownToRefresh();
+      } //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+    },
+  
+  up : {
+      height:50,//可选.默认50.触发上拉加载拖动距离
+//    auto:true,//可选,默认false.自动上拉加载一次
+      contentrefresh : "正在加载...",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+      contentnomore:'没有更多数据了',//可选，请求完毕若没有更多数据时显示的提醒内容；
+      callback :function(){
+      this.endPullupToRefresh(false);
+      } //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+    }
+  }
+     });
+     
+ //用ajax调数据
+ function aj(m){
+ 	$.getJSON("goods-list/goodslist.json",function(data){
+ 		$.each(data, function(m) {
+			var list=""
+			list+='<div id="box">'+
+			'<img src="'+data[m].img+'"/>'+
+			'<p><span id="jieshao">'+data[m].jieshao+'</span></p>'+
+			'<p><img id="tou" src="'+data[m].tou+'"/><span id="name">'+data[m].uname+'</span></p>'+
+			'</div>'
+			$('#content').append(list)
+		});
+ 	})
+ 
+}     
+ aj(2)    
+
+ document.getElementById("e").addEventListener('tap',function(){
+  	mui.openWindow({
+  		url:'my.html',
+  		id:'my.html'
+  	})
+  })
+ document.getElementById("d").addEventListener('tap',function(){
+  	mui.openWindow({
+  		url:'pic.html',
+  		id:'pic.html'
+  	})
+  })
+ document.getElementById("b").addEventListener('tap',function(){
+  	mui.openWindow({
+  		url:'find.html',
+  		id:'find.html'
+  	})
+  })
+ document.getElementById("a").addEventListener('tap',function(){
+  	mui.openWindow({
+  		url:'main.html',
+  		id:'main.html'
+  	})
+  })
+</script>
+</html>
+
